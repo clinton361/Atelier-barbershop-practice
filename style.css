@@ -1,0 +1,980 @@
+*{
+    /* padding: 0 !important; */
+    /* margin: 0 !important; */
+    box-sizing: border-box;
+}
+
+/* UTILITIES */
+:root{
+    --green: #009688;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.white{
+    color: white !important;
+}
+
+.black{
+    color: black !important;
+}
+/* END of UTILITIES */
+
+/* HEADER / 1st Section */
+.navbar-collapse{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding-block: 16px;
+}
+
+.navbar-toggler{
+    background-color: #009688 !important;
+}
+
+.navbar-menu-icon{
+    color: #fff !important; 
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.nav-icons{
+    font-size: 20px;
+}
+
+a.nav-link{
+    color: black;
+    font-size: 18px
+}
+
+a.nav-link:hover,
+a.nav-link:active{
+    /* color: var(--green) !important; */
+}
+
+a.navbar-brand{
+    font-size: 26px;
+}
+
+#header .carousel{
+    height: 70vh;
+}
+
+#header .carousel-item img{
+    height: 70vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+#header .carousel-caption{
+    width: 95%;
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#header .carousel-caption h5{
+    font-size: 34px;
+}
+
+#header .carousel-caption p{
+    font-size: 16px;
+    margin-block: 28px;
+}
+
+#header .carousel-caption button{
+    padding: 12px 32px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#header .carousel-caption button.btn-dif{
+    color: var(--green) !important;
+}
+
+.carousel-indicators button{
+    border-radius: 50% !important;
+    width: 13px !important;
+    height: 13px !important;
+    margin-inline: 8px !important;
+    background-color: #252422 !important;
+}
+
+.carousel-indicators button.active{
+    background-color: var(--green) !important;
+}
+
+@media screen and (min-width: 768px) {
+    #header .carousel-caption h5{
+        font-size: 48px;
+    }
+
+    #header .carousel-caption p{
+        font-size: 18px;
+    }
+
+    #header .carousel-caption button{
+        padding: 12px 45px;
+        font-size: 18px;
+    }
+
+    #header .carousel-caption{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-collapse{
+        background-color: transparent;
+    }
+
+    a.nav-link{
+        color: #fff;
+        font-size: 18px;
+        margin-inline: 10px;
+    }
+
+    a.nav-link:hover,
+    a.nav-link:active{
+        color: var(--green) !important;
+    }
+
+    #header .carousel{
+        height: 97vh;
+    }
+    
+    #header .carousel-item img{
+        height: 97vh;
+    }
+
+    #header .carousel-caption{
+        width: 70%;
+        top: 55%;
+    }
+
+    #header .carousel-caption p{
+        font-size: 18px;
+        margin: 48px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #header .carousel-caption h5{
+        font-size: 76px;
+    }
+
+    #header .carousel-caption{
+        width: 50%;
+        top: 48%;
+        left: 48%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* ABOUT US / 2nd Section */
+#about-us h3{
+    font-size: 28px;
+}
+
+#about-us p{
+    font-size: 16px;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+#about-us ul{
+    font-size: 19px;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+#about-us ul li{
+    margin-block: 8px;
+}
+
+#about-us button{
+    background-color: #009688;
+    color: #fff;
+    font-weight: bold;
+    padding-inline: 32px;
+    padding-block: 12px;
+    margin-block: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    #about-us h3{
+        font-size: 40px;
+    }
+
+    #about-us p{
+        font-size: 19px;
+    }
+
+    #about-us ul{
+        font-size: 20px;
+    }
+}
+
+/*END of  ABOUT US / 2nd Section */
+
+/* SERVICES / 3rd Section */
+#services{
+    background-color: #eee9e939;
+}
+
+#services .info-title .icon{
+    color: #009688;
+    font-size: 28px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(130, 115, 252, .05);
+    margin-inline-end: 28px;
+}
+
+#services .col-12{
+    padding: 36px 42px;
+    background-color: #fff;
+}
+
+#services .info-title .name span{
+    font-size: 16px;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+#services .info-title .name p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #252422;
+}
+
+@media screen and (min-width: 992px) {
+    #services{
+        padding: 120px 80px!important;
+    }
+
+    #services .info-title .name span{
+        font-size: 18px;
+    }
+
+    #services .info-title .name p{
+        font-size: 24px;
+    }
+    
+    #services .info-body p{
+        font-size: 20px;
+    }
+}
+
+/*END of SERVICES / 3rd Section */
+
+/* WHY CHOOSE US / 4th Section */
+#why-us h2{
+    font-size: 36px !important;
+}
+
+.features-icon{
+    color: #009688;
+    font-size: 28px;
+    width: 70px;
+    height: 70px;
+    padding: 36px;
+    background-color: rgba(130, 115, 252, .05);
+}
+
+.features-text h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.features-text p{
+    font-size: 17px;
+    color: #777679;
+}
+
+@media screen and (min-width: 768px) {
+    .features-text h3{
+        font-size: 24px;
+    }
+
+    .features-text p{
+        font-size: 18px;
+    }
+}
+/* END of WHY CHOOSE US / 4th Section */
+
+/* RESULTS / 5th Section */
+#results{
+    background: url(./img/carousel\ img1.jpg), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+#results h3{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#results span.green{
+    color: #009688;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#results p{
+    font-size: 18px;
+    color: #fff;
+}
+
+@media screen and (min-width: 576px) {
+    #results h3{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #results{
+        padding-block: 90px;
+    }
+}
+/*END of RESULTS / 5th Section */
+
+
+/* BLOG POSTS / 6th Section */
+#blog-posts .card{
+    border: 0;
+}
+
+#blog-posts .card-subtitle{
+    font-size: 15px !important;
+}
+
+#blog-posts .card-subtitle span{
+    color: var(--green);
+    font-size: 17px;
+}
+
+#blog-posts .card a{
+    background-color: var(--green);
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+    #blog-posts .card-title{
+        font-size: 24px;
+    }
+}
+/*END of BLOG POSTS / 6th Section */
+
+
+/* WHAT CLIENT SAYS / 7th Section */
+#clients .carousel-indicators button{
+    margin-bottom: -70px;
+}
+
+#clients .caption{
+   border: 1px solid rgba(205, 205, 205, 0.7);
+   border-radius: 8px;
+}
+
+#clients .caption h5{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#clients .caption h5 span{
+    color: var(--green);
+}
+
+#clients .caption p{
+    font-size: 17px;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+#clients .profile{
+    display: flex;
+}
+
+#clients .profile-pic img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+#clients .name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#clients .city{
+    font-size: 18px;
+    color: rgba(22, 28, 45, 0.7);
+
+}
+
+@media screen and (min-width: 768px) {
+    #clients .carousel{
+        /* height: 50vh; */
+    }
+}
+/*END of WHAT CLIENT SAYS / 7th Section */
+
+/* FOOTER / 8th Section */
+#footer{
+    background-color: #0f1113;
+}
+
+#footer .navbar-brand{
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#footer p,
+#footer span{
+    color: #777679;
+    font-size: 17px;
+}
+
+#footer h2{
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;   
+}
+
+#footer .socials li{
+    margin: 20px 10px;
+}
+
+#footer .socials li:hover a{
+    background-color: #009688;
+}
+
+#footer .socials li a{
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+}
+
+#footer .socials li a i{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footer button{
+    background-color: var(--green);
+}
+
+#footer input,
+#footer button{
+    padding: 16px;
+}
+
+#footer .rights{
+    border-top: 1px solid rgba(205, 205, 205, 0.7);
+}
+
+#footer .rights span{
+    color: #009688;
+}
+
+#footer .rights .links{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    /* text-align: left; */
+}
+
+#footer .rights .links li a{
+    text-decoration: none;
+    color: #777679;
+    font-size: 17px;
+}
+
+@media screen and (min-width: 768px) {
+    #footer p,
+    #footer .socials li a i,
+    #footer .rights .links li a{
+        font-size: 18px;
+    }
+}
+
+/* ABOUT US PAGE / 2ND PAGE!!! */
+/* ABOUT US PAGE / 2ND PAGE: HEADER Section */
+#header .header{
+    height: 35vh;
+    width: 100%;
+}
+
+#header .header > img{
+    max-height: 20vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+#header .header .text{
+    background-color: #f7f7f7;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#header .header .text a{
+    color: rgba(22, 28, 45, 0.7);
+}
+
+#header .header .text i{
+    color: rgba(22, 28, 45, 0.7);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    #header .header{
+        height: 45vh;
+    }
+
+    #header .header > img{
+        max-height: 35vh;
+    }
+}
+/* ABOUT US PAGE / 2ND PAGE: END of HEADER Section */
+
+
+/* ABOUT US PAGE / 2ND PAGE: STORY Section */
+#story .container{
+   padding: 15px;
+}
+
+#story button{
+    background-color: var(--green);
+    color: #fff;
+    font-weight: bold;
+} 
+
+#story h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#story p{
+    font-size: 17px;
+    color: #777679;
+    margin-block: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    #story .container{
+        max-width: 50%;
+    }
+
+    #story h2{
+        font-size: 48px;
+    }
+}
+/* ABOUT US PAGE / 2ND PAGE: END of STORY Section */
+
+
+/* ABOUT US PAGE / 2ND PAGE: SKILLED BARBERS DIV */
+.skilled-barbers{
+    background-color: #eee9e939;
+}
+
+.skilled-barbers h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.skilled-barbers p{
+    font-size: 17px;
+    color: #777679;
+    margin-block: 20px;
+}
+
+.skilled-barbers ul li{
+    font-size: 19px;
+    font-weight: bold;
+    margin-block: 12px 0;
+}
+
+.skilled-barbers ul li i{
+    color: #009688;
+    margin-inline: 0 8px;
+}
+
+.skilled-barbers img{
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .skilled-barbers h3{
+        font-size: 30px;
+    }
+
+    .skilled-barbers p{
+        font-size: 19px;
+    }
+}
+/* ABOUT US PAGE / 2ND PAGE: END of SKILLED BARBERS DIV */
+
+
+/* ABOUT US PAGE / 3RD PAGE: LOOKING GOOD DIV */
+.look-good{
+    background: url(./img/carousel\ img1.jpg), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-blend-mode: overlay;
+    background-position: center;
+    color: #fff;
+}
+
+.look-good h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.look-good button{
+    background-color: var(--green);
+    color: #fff;
+    font-weight: bold;
+}
+
+.look-good p{
+    font-size: 17px;
+}
+
+@media screen and (min-width: 768px) {
+    .look-good h2{
+        font-size: 48px;
+    }
+
+    .look-good p{
+        font-size: 19px;
+    }
+}
+/* ABOUT US PAGE / 3RD PAGE:END of  LOOKING GOOD DIV */
+
+
+/* ABOUT US PAGE / 4TH PAGE: EXPERT TEAM DIV */
+.expert h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.expert p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.expert .profile span{
+    font-size: 17px;
+    color: #777679;
+}
+
+.expert .socials a i{
+    color: var(--green);
+    border-radius: 50%;
+    background-color: #eee9e939;
+    margin-inline: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+
+.zoom-container {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.zoom-container img{
+    transition: transform 0.3s ease;
+}
+
+.expert .col-md-6:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.expert .col-md-6:hover p{
+    color: #009688;
+}
+
+@media screen and (min-width: 768px) {
+    .expert h2{
+        font-size: 48px;
+    }
+}
+/* ABOUT US PAGE / 4TH PAGE: END of EXPERT TEAM DIV */
+
+
+
+/* SERVICES PAGE / 1ST PAGE: SERVICES */
+.services h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.services h3{
+    font-size: 28px;
+    font-weight: bold;  
+}
+
+.services p{
+    font-size: 17px;
+    color: #777679;
+}
+
+.services ul li{
+    font-size: 19px;
+    color: #777679;
+    margin-block: 10px;
+}
+
+.services button{
+    background-color: var(--green);
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px){
+    .services h2{
+        font-size: 48px;
+    }
+    
+    .services h3{
+        font-size: 36px;
+    }
+
+    .services p{
+        font-size: 18px;
+    }
+}
+/* SERVICES PAGE / 1ST PAGE: END of SERVICES */
+
+
+/* SERVICES PAGE / 2ND PAGE: SERVICES-CATALOGUE */
+.services-catalogue{
+    background-color: #eee9e939;
+}
+
+.services-catalogue .info-title .icon{
+    color: #009688;
+    font-size: 28px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(130, 115, 252, .05);
+    margin-inline-end: 28px;
+}
+
+.services-catalogue .col-wrapper{
+    padding: 36px 42px;
+    background-color: #fff;
+}
+
+.services-catalogue .info-title .name span{
+    font-size: 16px;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+.services-catalogue .info-title .name p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #252422;
+}
+
+@media screen and (min-width: 992px) {
+    .services-catalogue{
+        padding: 120px 80px!important;
+    }
+
+    .services-catalogue .info-title .name span{
+        font-size: 18px;
+    }
+
+    .services-catalogue .info-title .name p{
+        font-size: 24px;
+    }
+    
+    .services-catalogue .info-body p{
+        font-size: 20px;
+    }
+}
+/* SERVICES PAGE / 2ND PAGE: END of SERVICES-CATALOGUE */
+
+
+/* SERVICES PAGE / 3RD PAGE: FEATURED SERVICES */
+.featured-services h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .featured-services h2{
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .featured-services h2{
+        font-size: 48px;
+    }
+}
+/* SERVICES PAGE / 3RD PAGE: END of FEATURED SERVICES */
+
+
+/* SERVICES PAGE / 4TH PAGE: OUR PLANS */
+.our-plans{
+    background-color: #eee9e939;
+}
+
+.our-plans h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.our-plans .plan h4{
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 3px dotted #777679;
+    padding-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-plans .plan span{
+    font-weight: bold;
+    font-size: 20px;
+    color: #009688;
+}
+
+.our-plans .plan p{
+    font-size: 17px;
+    color: #777679;
+}
+
+@media screen and (min-width: 768px) {
+    .our-plans h2{
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .our-plans h2{
+        font-size: 48px;
+    }
+}
+
+
+/* CONTACT US PAGE / 1ST PAGE: CONTACT US */
+.contact-us h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contact-us input,
+.contact-us textarea{
+    border: 1px solid #eee;
+}
+
+.contact-us input:hover,
+.contact-us textarea:hover{
+    outline: 1px solid var(--green);
+}
+
+.contact-us button{
+    background-color: var(--green);
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-us button:hover{
+    background-color: var(--green);
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-us h2{
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact-us h2{
+        font-size: 48px;
+    }
+}
+/* CONTACT US PAGE / END of 1ST PAGE: CONTACT US */
+
+/* CONTACT US PAGE / 2ND PAGE: ADDRESS INFO*/
+.address-info h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.address-info i{
+    color: #009688;
+}
+
+.address-info a,
+.address-info p{
+    color: rgba(22, 28, 45, 0.7);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .address-info h2{
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .address-info h2{
+        font-size: 48px;
+    }
+}
+
+.map{
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+}
+
+.map iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 12px;
+}
